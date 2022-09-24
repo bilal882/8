@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  align-items: center;
+  /* background: url(https://static.vecteezy.com/system/resources/previews/007/620/130/original/skyscraper-building-background-concept-free-vector.jpg) center fixed no-repeat; */
+  background: black;
+}
+
+.card {
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  min-width: 20em;
+  border-radius: 10px;
+  position: relative;
+}
+
+.divider {
+  width: 3rem;
+  background-color: black;
+  padding: 1px;
+  margin-top: 5px;
+}
+
+.emailInput {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  font-size: large;
+  transition: 1s all;
+}
+
+.emailInput:focus {
+  border-bottom: 2px solid blue;
+}
+
+.passwordInput {
+  margin-top: 2rem;
+  transition: 1s all;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  font-size: large;
+}
+
+.passwordInput:focus {
+  border-bottom: 2px solid blue;
+}
+
+::placeholder {
+  color: black;
+}
+
+
+.btnLogin {
+  padding: 12px 70px;
+  margin-top: 3rem;
+  background-color: black;
+  color: white;
+  font-size: large;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.div {
+  text-align: center;
+}
+
+.circle1 {
+  width: 4rem;
+  height: 4rem;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: 1s animation infinite;
+}
+
+@keyframes animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
